@@ -1,2 +1,0 @@
-This is a sample invalid file used for testing.
-It is not an image file.
