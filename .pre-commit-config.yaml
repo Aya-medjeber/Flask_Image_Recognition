@@ -1,0 +1,15 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: trailing-whitespace   # removes spaces at the end of lines
+      - id: end-of-file-fixer     # makes sure every file ends with a newline
+      - id: check-yaml            # catches broken YAML (like ci.yml)
+
+  - repo: local
+    hooks:
+      - id: pylint
+        name: pylint
+        entry: pylint
+        language: system
+        types: [python]
