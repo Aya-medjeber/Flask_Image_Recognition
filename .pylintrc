@@ -3,6 +3,7 @@ py-version=3.10
 ignore=venv,test_images,.github
 # Fail the check if the score drops below 9/10
 fail-under=9.0
+init-hook=__import__("sys").path.insert(0, ".")
 
 [TYPECHECK]
 # TensorFlow/Keras load their modules lazily, which makes Pylint
